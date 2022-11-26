@@ -1,0 +1,18 @@
+Problem faced:
+1) While installing Java in ec2(Cli): 
+
+error command(javac was not found to compile the Java program): sudo yum install java-1.8.0-openjdk
+
+Working command(with javac installed):  sudo yum install java-1.8.0-openjdk-devel (or) sudo yum install java-1.8.0-openjdk-devel-1.8.0.20-3.b26.el6
+
+
+
+
+2) Getting keys and Custom headers in kafka message: 
+
+ bin/kafka-console-consumer.sh --topic {Topic_name}  --bootstrap-server {public ip of your ec2 instance}:9092 --from-beginning --property print.key=true --property print.headers=true
+                                            
+
+
+
+
